@@ -138,12 +138,20 @@ int main() {
     std::cin >> dn;
     cntemp = cn;
     complexMultiplicationReference(cn, dn);
-    std::cout << "Перемноженное с помощью ссылок комплексное число: " << cn.real << "+" << cn.imaginary << "i" << std::endl;
+    std::cout << "Перемноженное с помощью ссылок комплексное число: " << cn.real;
+    if (cn.imaginary >= 0) {
+           std::cout << "+";
+    }
+    std::cout << cn.imaginary << "i" << std::endl;
     cn = cntemp;
     complexMultiplicationPointer(ptrcn, ptrdn);
-    std::cout << "Перемноженное с помощью указателей комплексное число: " << cn.real << "+" << cn.imaginary << "i" << std::endl;
+    std::cout << "Перемноженное с помощью указателей комплексное число: " << cn.real;
+    if (cn.imaginary >= 0) {
+           std::cout << "+";
+    }
+    std::cout << cn.imaginary << "i" << std::endl;
     std::cout << std::endl;
-    
+
     std::cout << "Задание 10" << std::endl;
     std::cout << "Введите вещественную часть комплексного числа: ";
     std::cin >> cn.real;
@@ -257,13 +265,13 @@ int main() {
     std::cout << "Задание 14" << std::endl;
     std::cout << "Заполните матрицу 3x3" << std::endl;
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j <= 3; j++) {
+        for (int j = 0; j < 3; j++) {
             std::cin >> m[i][j];
             mtemp[i][j] = m[i][j];
         }
     }
     matrixTransposeReference(m);
-    std::cout << "Матрица после транспонирования, сделанного с помощью ссылок:" << std::endl;
+    std::cout << "Матрица после транспонирования, сделанного с помощью ссылок" << std::endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             std::cout << m[i][j] << " ";
@@ -272,7 +280,7 @@ int main() {
         std::cout << std::endl;
     }
     matrixTransposePointer(ptrm);
-    std::cout << "Матрица после транспонирования, сделанного с помощью указателей:" << std::endl;
+    std::cout << "Матрица после транспонирования, сделанного с помощью указателей" << std::endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             std::cout << m[i][j] << " ";
@@ -292,7 +300,7 @@ int main() {
         }
     }
     matrixMultiplicationReference(m, dn);
-    std::cout << "Матрица после умножения, сделанного с помощью ссылок:" << std::endl;
+    std::cout << "Матрица после умножения, сделанного с помощью ссылок" << std::endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             std::cout << m[i][j] << " ";
@@ -326,7 +334,7 @@ int main() {
         }
     }
     lineSwapReference(m, in1, in2);
-    std::cout << "Матрица после перестановки строк, сделанной с помощью ссылок:" << std::endl;
+    std::cout << "Матрица после перестановки строк, сделанной с помощью ссылок" << std::endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             std::cout << m[i][j] << " ";
@@ -335,7 +343,7 @@ int main() {
         std::cout << std::endl;
     }
     lineSwapPointer(ptrm, ptrin1, ptrin2);
-    std::cout << "Матрица после перестановки строк, сделанной с помощью указателей:" << std::endl;
+    std::cout << "Матрица после перестановки строк, сделанной с помощью указателей" << std::endl;
     for (int i = 0; i <= 2; i++) {
         for (int j = 0; j <= 2; j++) {
             std::cout << m[i][j] << " ";
