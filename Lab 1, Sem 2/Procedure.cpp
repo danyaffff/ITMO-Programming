@@ -1,6 +1,5 @@
 #include <cmath>
 #include <utility>
-#include <iostream>
 #include "Procedure.hpp"
 
 // 1 задание
