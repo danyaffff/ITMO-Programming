@@ -13,15 +13,15 @@ public:
     complex(double, double);  // Конструктор комплексного числа
     complex(const complex &);  // Конструктор копирования
     
-    auto re() -> double;
-    auto im() -> double;
+    double re();
+    double im();
     
-    auto operator+ (complex &) -> complex;
-    auto operator* (complex &) -> complex;
+    complex operator+ (complex &);
+    complex operator* (complex &);
     
-    auto length() -> complex;
+    double length();
     
-    auto print() -> void;
+    void print();
 };
 
 #endif
