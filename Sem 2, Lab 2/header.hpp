@@ -19,7 +19,7 @@ public:
     complex operator+ (complex &);
     complex operator* (complex &);
     
-    double length();
+    complex length();
     
     void print();
 };
