@@ -36,5 +36,6 @@ int main() {
     for (int i = 0; i < arraySize; i++) {
         printf("array[%d] = %c\n", i, dynamicArray[i]);
     }
+    
     free(dynamicArray);
 }
