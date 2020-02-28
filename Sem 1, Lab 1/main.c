@@ -20,5 +20,4 @@ int main() {
     
     printf("Это ваш символ %c\n", Symbol);
     printf("Это ваше число %f", Number);
-    
 }
