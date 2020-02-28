@@ -4,10 +4,10 @@
 #include <math.h>
 
 enum TypesOfCars {
-    Passenger,
-    Truck,
-    Bus,
-    Racing
+    passenger,
+    truck,
+    bus,
+    racing
 };
 
 typedef struct point {
@@ -15,43 +15,44 @@ typedef struct point {
     double y;
 } point;
 
-typedef struct Square {
+typedef struct square {
+    double square;
+    
     point a;
     point b;
     point c;
     point d;
-    
-    double Square;
-} Square;
+} square;
 
 union Device {
-    unsigned short Printer;
+    unsigned short printer;
+    
     struct Statment {
-        unsigned short Done: 1;
-        unsigned short LowToner: 1;
-        unsigned short DrumDamaged: 1;
-        unsigned short NoPaper: 1;
+        unsigned short done: 1;
+        unsigned short lowToner: 1;
+        unsigned short drumDamaged: 1;
+        unsigned short noPaper: 1;
     } Statement;
 } Device;
 
 int main() {
-    printf("%d\n\n", Bus);
+    printf("%d\n\n", bus);
     
-    Square Sq;
-    Sq.a.x = 0;
-    Sq.a.y = 0;
-    Sq.b.x = 0;
-    Sq.b.y = 2;
-    Sq.c.x = 2;
-    Sq.c.y = 2;
-    Sq.d.x = 2;
-    Sq.d.y = 0;
-    Sq.Square = ((sqrt(pow(Sq.a.x - Sq.c.x, 2) + pow(Sq.a.y - Sq.c.y, 2))) * (sqrt(pow(Sq.b.x - Sq.d.x, 2) + pow(Sq.b.y - Sq.d.y, 2)))) / 2;
-    printf("Площадь %f\n", Sq.Square);
+    square square;
+    square.a.x = 0;
+    square.a.y = 0;
+    square.b.x = 0;
+    square.b.y = 2;
+    square.c.x = 2;
+    square.c.y = 2;
+    square.d.x = 2;
+    square.d.y = 0;
+    square.square = ((sqrt(pow(square.a.x - square.c.x, 2) + pow(square.a.y - square.c.y, 2))) * (sqrt(pow(square.b.x - square.d.x, 2) + pow(square.b.y - square.d.y, 2)))) / 2;
+    printf("Площадь %lf\n\n", square.square);
     
-    scanf("%hu", &Device.Printer);
-    Device.Statement.Done ? printf("Yes\n") : printf("No\n");
-    Device.Statement.LowToner ? printf("Yes\n") : printf("No\n");
-    Device.Statement.DrumDamaged ? printf("Yes\n") : printf("No\n");
-    Device.Statement.NoPaper ? printf("Yes\n") : printf("No\n");
+    scanf("%hu", &Device.printer);
+    Device.Statement.done ? printf("Yes\n") : printf("No\n");
+    Device.Statement.lowToner ? printf("Yes\n") : printf("No\n");
+    Device.Statement.drumDamaged ? printf("Yes\n") : printf("No\n");
+    Device.Statement.noPaper ? printf("Yes\n") : printf("No\n");
 }
