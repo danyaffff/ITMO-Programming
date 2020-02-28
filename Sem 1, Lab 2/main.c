@@ -3,7 +3,6 @@
 // Полученные значения функций выведите на консоль.
 
 #include <stdio.h>
-#include <stdio.h>
 #include <math.h>
 
 int main() {
