@@ -10,14 +10,14 @@
 
 int main() {
     char Symbol;
-    float Number;
+    double Number;
     
-    printf("Введите символ ");
+    printf("Введите символ: ");
     scanf("%c", &Symbol);
     
-    printf("Введите вещественное число ");
-    scanf("%f", &Number);
+    printf("Введите вещественное число: ");
+    scanf("%lf", &Number);
     
     printf("Это ваш символ %c\n", Symbol);
-    printf("Это ваше число %f", Number);
+    printf("Это ваше число %lf\n", Number);
 }
