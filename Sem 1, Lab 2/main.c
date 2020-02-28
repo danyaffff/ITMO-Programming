@@ -11,10 +11,10 @@ int main() {
     double z1, z2, alpha;
     
     printf("Введите α\n");
-    scanf("%f", &alpha);
+    scanf("%lf", &alpha);
     
     z1 = 2 * pow(sin(3 * pi - 2 * alpha), 2) * pow(cos(5 * pi + 2 * alpha), 2);
     z2 = (double)1/4 - (double)1/4 * sin((double)5/2 * pi - 8 * alpha);
     
-    printf("%lf\n%f", z1, z2);
+    printf("%lf\n%lf", z1, z2);
 }
