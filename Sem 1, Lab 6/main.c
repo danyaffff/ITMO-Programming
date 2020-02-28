@@ -1,28 +1,40 @@
-/* Лабораторная работа №6. Указатели и динамическая память */
+// Лабораторная работа №6. Указатели и динамическая память.
+// 
+// 1. Создать массив с использованием указателя. Заполнить созданный массив значениями согласно варианту. Для обращения к
+// элементам массива при заполнении использовать индексы массива. Результат в виде таблицы значений массива вывести на
+// консоль. Для обращения к элементам массива при выводе информации использовать указатели.
+//
+// 2. Создать массив в динамической памяти. Заполнить созданный массив значениями согласно варианту. Результат в виде таблицы
+// значений массива вывести на консоль. После завершения работы с массивом освободить динамическую память.
 
 #include <stdio.h>
 #include <stdlib.h>
 
 int main() {
-    int i, n = 5;
-    char Arr[n], *Array, *ptr; ptr = Arr;
-    Arr[0] = 'H';
-    Arr[1] = 'e';
-    Arr[2] = 'l';
-    Arr[3] = 'l';
-    Arr[4] = 'o';
-    for (i = 0; i < n; i++) {
-        printf("Arr[%d] %c\n", i, *(ptr + i));
+    int arraySize = 5;
+    char array[arraySize];
+    char *ptr = array;
+    char *dynamicArray = (char*)malloc(arraySize * sizeof(char));
+    
+    array[0] = 'H';
+    array[1] = 'e';
+    array[2] = 'l';
+    array[3] = 'l';
+    array[4] = 'o';
+    
+    for (int i = 0; i < arraySize; i++) {
+        printf("array[%d] = %c\n", i, *(ptr + i));
     }
     printf("\n");
-    Array = (char*)malloc(n * sizeof(char));
-    Array[0] = 'H';
-    Array[1] = 'e';
-    Array[2] = 'l';
-    Array[3] = 'l';
-    Array[4] = 'o';
-    for (i = 0; i < n; i++) {
-        printf("Array[%d] %c\n", i, Array[i]);
+    
+    dynamicArray[0] = 'H';
+    dynamicArray[1] = 'e';
+    dynamicArray[2] = 'l';
+    dynamicArray[3] = 'l';
+    dynamicArray[4] = 'o';
+    
+    for (int i = 0; i < arraySize; i++) {
+        printf("array[%d] = %c\n", i, dynamicArray[i]);
     }
-    free(Array);
+    free(dynamicArray);
 }
