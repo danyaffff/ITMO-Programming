@@ -9,7 +9,7 @@
 5. [Print array elements and multiply two matrices](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%205);
 6. [Learn pointers and dynamic memory](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%206);
 7. [Create and learn new data types](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%207);
-8. [Learn how to work with strings](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%208);
+8. [How to work with strings](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%208);
 9. Lost and not found;
 10. Lost and not found;
 11. Lost and not found;
