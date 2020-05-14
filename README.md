@@ -26,3 +26,4 @@
 4. [Virtual functions](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%204);
 5. [Templates, exceptions](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%205);
 6. [Iterators](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%206);
+7. [Circular buffer](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%207);
