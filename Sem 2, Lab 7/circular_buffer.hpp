@@ -435,7 +435,10 @@ public:
     int size() { return _size; }
     
     void clear() {
-        de_init();
+        if (_capacity > 0) {
+            _begin = nullptr;
+            _end = _data;
+        }
         
         _push_front_index = 0;
         _push_back_index = 0;
