@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "circular_buffer.hpp"
-#include "exception.hpp"
 
 int main() {
     const int size = 10;
