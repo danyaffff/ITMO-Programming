@@ -1284,10 +1284,86 @@ public:
             return false;
         } else {
             if (!isAlreadySolved) {
+                std::vector<std::string> parsedSolution;
+                for (int i = 0; i < solution.size(); i++) {
+                    if (i < solution.size() - 2 && solution[i] == solution[i + 1] && solution[i] == solution[i + 2]) {
+                        if (solution[i] == "W") {
+                            parsedSolution.push_back("W'");
+                        } else if (solution[i] == "Y") {
+                            parsedSolution.push_back("Y'");
+                        } else if (solution[i] == "B") {
+                            parsedSolution.push_back("B'");
+                        } else if (solution[i] == "G") {
+                            parsedSolution.push_back("G'");
+                        } else if (solution[i] == "R") {
+                            parsedSolution.push_back("R'");
+                        } else if (solution[i] == "O") {
+                            parsedSolution.push_back("O'");
+                        } else if (solution[i] == "W'") {
+                            parsedSolution.push_back("W");
+                        } else if (solution[i] == "Y'") {
+                            parsedSolution.push_back("Y");
+                        } else if (solution[i] == "B'") {
+                            parsedSolution.push_back("B");
+                        } else if (solution[i] == "G'") {
+                            parsedSolution.push_back("G");
+                        } else if (solution[i] == "R'") {
+                            parsedSolution.push_back("R");
+                        } else if (solution[i] == "O'") {
+                            parsedSolution.push_back("O");
+                        }
+                            
+                        i += 2;
+                        continue;
+                    }
+                    
+                    if (i < solution.size() - 1 && solution[i] == solution[i + 1]) {
+                        if (solution[i] == "W" || solution[i] == "W'") {
+                            parsedSolution.push_back("W2");
+                        } else if (solution[i] == "Y" || solution[i] == "Y'") {
+                            parsedSolution.push_back("Y2");
+                        } else if (solution[i] == "B" || solution[i] == "B'") {
+                            parsedSolution.push_back("B2");
+                        } else if (solution[i] == "G" || solution[i] == "G'") {
+                            parsedSolution.push_back("G2");
+                        } else if (solution[i] == "R" || solution[i] == "R'") {
+                            parsedSolution.push_back("R2");
+                        } else if (solution[i] == "O" || solution[i] == "O'") {
+                            parsedSolution.push_back("O2");
+                        }
+                        
+                        i++;
+                        continue;
+                    }
+                    
+                    if (i < solution.size() - 1) {
+                        if ((solution[i] == "W" && solution[i + 1] == "W'") || (solution[i] == "W'" && solution[i + 1] == "W")) {
+                            i++;
+                            continue;
+                        } else if ((solution[i] == "Y" && solution[i + 1] == "Y'") || (solution[i] == "Y'" && solution[i + 1] == "Y")) {
+                            i++;
+                            continue;
+                        } else if ((solution[i] == "B" && solution[i + 1] == "B'") || (solution[i] == "B'" && solution[i + 1] == "B")) {
+                            i++;
+                            continue;
+                        } else if ((solution[i] == "G" && solution[i + 1] == "G'") || (solution[i] == "G'" && solution[i + 1] == "G")) {
+                            i++;
+                            continue;
+                        } else if ((solution[i] == "R" && solution[i + 1] == "R'") || (solution[i] == "R'" && solution[i + 1] == "R")) {
+                            i++;
+                            continue;
+                        } else if ((solution[i] == "O" && solution[i + 1] == "O'") || (solution[i] == "O'" && solution[i + 1] == "O")) {
+                            i++;
+                            continue;
+                        }
+                    }
+                    
+                    parsedSolution.push_back(solution[i]);
+                }
                 std::cout << "Куб собран! Для его сборки ";
-                switch (solution.size() % 10) {
+                switch (parsedSolution.size() % 10) {
                     case 1: {
-                        std::cout << "потребовался " << solution.size() << " шаг." << std::endl;
+                        std::cout << "потребовался " << parsedSolution.size() << " шаг." << std::endl;
                         break;
                     }
                         
@@ -1307,11 +1383,12 @@ public:
                     }
                 }
                 std::cout << "Последовательность повротов граней в обозначении Сингмастера и метрики FTM: ";
-                for (int i = 0; i < solution.size(); i++) {
-                    std::cout << solution[i] << " ";
+                for (int i = 0; i < parsedSolution.size(); i++) {
+                    std::cout << parsedSolution[i] << " ";
                 }
                 std::cout << std::endl;
                 isAlreadySolved = true;
+                parsedSolution.clear();
             } else {
                 std::cout << "Куб уже собран!" << std::endl;
             }
