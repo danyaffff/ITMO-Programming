@@ -1,6 +1,6 @@
-# Synopsis #
-
-## First semester: ##
+# ITMO Programming
+## Synopsis #
+### First semester: ##
 ###### Language: C ######
 1. [Print a character and a real number](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%201);
 2. [Print the result of two functions](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%202);
