@@ -1,7 +1,6 @@
 # ITMO Programming
-## Synopsis #
-### First semester: ##
-###### Language: C ######
+## First semester:
+###### Language: C
 1. [Print a character and a real number](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%201);
 2. [Print the result of two functions](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%202);
 3. [Represent a number in various number systems](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%203);
@@ -20,8 +19,8 @@
 
 Tasks: [Google drive](https://drive.google.com/drive/u/0/folders/1evFNFQOdeiMIVPAOOo4XLB-VJRvSZvD3);
 
-## Second semester: ##
-###### Language: C++ ######
+## Second semester:
+###### Language: C++
 1. [Learn pointers and references](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%201);
 2. [Create a class](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%202);
 3. [Operator overloading](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%203);
