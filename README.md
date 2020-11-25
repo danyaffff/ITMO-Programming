@@ -17,7 +17,7 @@
 14. [Konway's game of Life](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%201%2C%20Lab%2014);
 15. Lost and not found.
 
-Tasks: [Google drive](https://drive.google.com/drive/u/0/folders/1evFNFQOdeiMIVPAOOo4XLB-VJRvSZvD3);
+[Tasks](https://github.com/danyaffff/ITMO-Programming/tree/master/Tasks%201);
 
 ## Second semester:
 ###### Language: C++
@@ -30,4 +30,4 @@ Tasks: [Google drive](https://drive.google.com/drive/u/0/folders/1evFNFQOdeiMIVP
 7. [Circular buffer](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%207);
 8. [OpenGL Rubik's cube solver](https://github.com/danyaffff/ITMO-Programming/tree/master/Sem%202%2C%20Lab%208);
 
-Tasks: [Google drive](https://drive.google.com/drive/folders/1pn6YN9MN8I01G1Bz-6saimffKrQ4Zyc7);
+[Tasks](https://github.com/danyaffff/ITMO-Programming/tree/master/Tasks%202);
